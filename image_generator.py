@@ -15,4 +15,5 @@ def generate_pixels(size):
 
 
 if __name__ == '__main__':
-    generate_pixels(int(input()))
+    img = generate_pixels(int(input()))
+    img.save(f'./examples/{randint(0, 100)}.png')
